@@ -13,12 +13,12 @@ def click(x,y):
     time.sleep(0.05)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 
-#Color of center: (255, 219, 195)
+#this is the center color of the target in the game: (255, 219, 195)
 
 while keyboard.is_pressed('q') == False:
 
-    pic = pyautogui.screenshot(region=(371,270,600,420))
-
+    pic = pyautogui.screenshot(region=(371,270,600,420)) #this region is on my computer on your computer can be different
+                                    
     width, height = pic.size
 
     for x in range(0,width,5):
